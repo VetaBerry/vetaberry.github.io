@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .circle {
+            list-style: circle;
+        }
+
+        .square {
+            list-style: square;
+        }
+
+        .none {
+            list-style: none;
+        }
+
+        .element1 {
+            background-color: red;
+        }
+
+        .element2 {
+            background-color: green;
+        }
+
+        .box {
+            background-color: black;
+            color: blanchedalmond   ;
+            /* outside area */
+            margin: 10px;
+            /* inside area */
+            padding: 20px
+        }
+
+        .class {
+            text-align: center;
+        }
+
+        #b1 {
+            margin: 5px;
+            width: 300px;
+            height: 150px;
+            background-color: coral;
+        }
+
+        #b2 {
+            margin: 5px;
+            width: 350px;
+            height: 200px;
+            background-color: cornflowerblue;
+
+        }
+
+        .HTMLSematicsElement {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        header {
+            height: 50px;
+            width: 500px;
+            background-color: red;
+        }
+
+        nav {
+            height: 25px;
+            background-color: green;
+        }
+
+        section {
+            float: left;
+            width: 180px;
+            height: 100px;
+            background-color: purple;
+        }
+
+        aside {
+            float: left;
+            width: 3200px;
+            height: 100px;
+            background-color: saddlebrown;
+        }
+
+        footer {
+            clear: both;
+            height: 80px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- This comment -->
+    <h1>Text 1</h1>
+    <h2>Text 2</h2>
+    <h3>Text 3</h3>
+    <h4>Text 4</h4>
+    <h5>Text 5</h5>
+    <h6>Text 6</h6>
+
+    <!-- Paragraph -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aperiam, ex impedit labore corrupti laborum, perferendis aspernatur maxime ipsam ullam laboriosam suscipit voluptatum in quae beatae consequuntur rem. Iure, distinctio?
+    </p>
+
+    <!-- Text font -->
+    <b>Text</b>     <!--Bold-->
+    <br>
+    <i>Text</i>     <!--Italic-->
+    <br>
+    <small>Text</small>     <!--Small Text-->
+    <br>
+    <del>Text</del>     <!--delete text-->
+    <br>
+    <mark>Mark</mark>   <!--Mark Text-->
+    <br>
+    <ins>Text</ins>     <!--Insert(Unerline) Text-->
+    <br>
+    <b>A</b><sub>Text</sub>     <!--Subscript Text-->
+    <br>
+    <b>A</b><sup>Text</sup>     <!--Superscript Text-->
+    <br>
+
+    <img src="https://cdn.vox-cdn.com/thumbor/wfbQ3XccV6SxGMt1l6zBPL3Xg7o=/0x0:1192x795/1400x1050/filters:focal(596x398:597x399)/cdn.vox-cdn.com/uploads/chorus_asset/file/22312759/rickroll_4k.jpg" alt="rickroll">
+    <a title="Facebook Falcon Hawk" href="https://www.facebook.com/falcon.hawk.528" target="_blank">Click here</a>
+    <a href="https://www.facebook.com/photo?fbid=884762389091499&set=a.227056438195434">
+        <img src="https://scontent.fbkk12-4.fna.fbcdn.net/v/t1.6435-9/242218848_884762395758165_183176266531626342_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=9gHiBlqe8h0AX-BikWG&_nc_ht=scontent.fbkk12-4.fna&oh=994a6e18ec6c7ab5300ba0888de32fd9&oe=6189BDFF" alt="Student Council">
+    </a>
+    <br>
+    <br>
+
+    <!-- table -->
+    <table>
+
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+
+        
+        <tr>
+            <td>Wachirawut</td>
+            <td>Suttitanon</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>Wachirawut</td>
+            <td>Suttitanon</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>Wachirawut</td>
+            <td>Suttitanon</td>
+            <td>17</td>
+        </tr>
+
+        <br>
+
+        <!-- ul & ol & bullet style -->
+        <ul>
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+            <li>List 4</li>
+            <li>List 5</li>
+        </ul>
+        
+        <ul class="square">
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+            <li>List 4</li>
+            <li>List 5</li>
+        </ul>
+
+        <ul class="circle">
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+            <li>List 4</li>
+            <li>List 5</li>
+        </ul>
+
+        <ul class="none">
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+            <li>List 4</li>
+            <li>List 5</li>
+        </ul>
+
+        <ol>
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+            <li>List 4</li>
+            <li>List 5</li>
+        </ol>
+
+    </table>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- form tag -->
+    <form action="">
+       <fieldset>
+           <legend>
+               Register Form
+           </legend>
+           
+           <label for="Firstname"></label>
+           <input type="text" placeholder="Enter your firstname...">
+           <br>
+           <label for="Lastname"></label>
+           <input type="text" placeholder="Enter your lastname...">
+           <br>
+           <label for="Gender"></label>
+           <br>
+           <input type="radio" name="gender" value="male" checked>Male
+           <input type="radio" name="gender" value="female">Female
+           <br>
+           <input type="checkbox" value="value1" name="Value1"> checkbox 1
+           <input type="checkbox" value="value2" name="Value2"> checkbox 2
+           <input type="checkbox" value="value3" name="Value3"> checkbox 3
+           <br>
+           <input type="submit" value="Submit">
+
+       </fieldset> 
+    </form>
+    <br>
+
+    <!-- block element & inline element -->
+    <div class="element1">
+        This is a block elements
+    </div>
+
+    <div class="element1">
+        This is a block elements
+    </div>
+
+    <a href="#" class="element2">This is a inline elements</a>
+    <a href="#" class="element2">This is a inline elements</a>
+    <a href="#" class="element2">This is a inline elements</a>
+    <br>
+    <br>
+    <br>
+
+    <!-- class -->
+    <!-- single class -->
+    <div class="box">
+        <h2>This is box 1</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <!-- multiple class -->
+    <div class="box center">
+        <h2>This is box 2</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="box">
+        <h2>This is box 3</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <!-- id -->
+    <!-- use for 1 element -->
+    <div id="b1"></div>
+    <div id="b2"></div>
+    <br>
+
+    <iframe src="https://pages.github.com/" width="640px 360px" frameborder="1"></iframe>
+    <br>
+    <br>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rgW_I8saK1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+
+    <!-- HTML Enties
+        Result Description                          Entity Name        Entity number
+
+                non-breaking space                  &nbsp;              &#160;
+            <   less than                           &lt;                &#60;
+            >   greater than                        &gt;                &#62;
+            &   ampersand                           &amp;               &#38;
+            "   double quotation mark               &quot;               &#34;
+            '   single quotation mark (apotrophe)   &apos;              &#39;
+            ¢   cent                                &cent;              &#162;
+            £   pound                               &pound;             &#163;
+            ¥   yen                                 &yen                &#165;
+            €   euro                                &euro               &#8364;
+            ©   copyright                           &copy;              &#169;
+            ®   registered trademark                &reg;               &#174;
+
+     -->
+
+    <p>&nbsp; non-breaking space</p>
+    <p>&lt; greater than</p>
+    <p>&gt; greater than</p>
+    <p>&amp; ampersand</p>
+    <p>&quot; double quotation mark</p>
+    <p>&apos; single quotation mark</p>
+    <p>&cent; cent</p>
+    <p>&pound; pound</p>
+    <p>&yen; yen</p>
+    <p>&euro; euro</p>
+    <p>&copy; copyright</p>
+    <p>&reg; registered trademark</p>
+
+    <p>
+        This is how to use html entity : example &lt;p&gt;
+        test &amp; result
+    </p>
+    <br>
+
+    <!-- HTML Sematics Element
+
+        <article>
+        <aside>
+        <details>
+        <figcaption>
+        <figure>
+        <footer>
+        <header>
+        <main>
+        <mark>
+        <nav>
+        <section>
+        <summary>
+        <time> 
+
+     -->
+
+     <header class="HTMLSematicsElement">
+         Header
+     </header>
+
+     <nav class="HTMLSematicsElement">
+         Nav
+     </nav>
+
+     <section class="HTMLSematicsElement">
+         Section
+     </section>
+
+     <aside class="HTMLSematicsElement">
+         Aside
+     </aside>
+
+     <footer class="HTMLSematicsElement">
+         Footer
+     </footer>
+
+</body>
+</html>
