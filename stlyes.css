@@ -1,1 +1,95 @@
   @import url('https://fonts.googleapis.com/css2?family=Itim&family=Merriweather:wght@400;900&family=Montserrat:wght@400;500;600;700&family=Work+Sans&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title{
+      text-align: left;
+  }
+  
+  nav {
+    background-color: #333; /* Background color of the navigation bar */
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff; /* Text color for the title and button */
+    position: fixed; /* This will fix position of nav bar */
+    justify-content: space-between; /* To push the title and button to the opposite sides */
+  }
+  
+  .navbar-left h1 {
+    margin: 0;
+  }
+  
+  .navbar-right a {
+    text-decoration: none;
+    /* background-color: #ff8809; Background color of the button */
+    color: #FFF; /* Text color for the button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s ease;
+  }
+
+  /* ###Content### */
+
+  section {
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  /* Add the background image to the desired section */
+  
+  img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    padding-bottom: 0;
+    margin-bottom: 0;<p></p>
+  }
+
+  #c {
+    margin-right: 20px;
+  }
+  
+  .navbar-right a:hover{
+    background-color: #9e2626; /* Background color of the button */
+    color: #fff; /* Text color for the button */
+    border: none;
+    transform: scale(1.2);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+  }
+  
+  footer {
+    background-color: #f0f0f0;
+    padding: 2px;
+    text-align: center;
+  }
+
+  section:nth-child(even) {
+    background-color: #f0f0f0;
+  }
+
+  .active {
+    background-color: #CD5C5C;
+  }
+
+  .inactive {
+    background-color: #3CB371;
+  }
